@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa; 
+    color: #495057; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #343a40; 
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.container, .currency-container, .chart-container, table {
+    margin: 20px auto;
+    padding: 25px;
+    background: #e9ecef; 
+    width: 50%;  
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ced4da; 
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 0; 
+    overflow: hidden;
+}
+
+th {
+    background-color: #dee2e6; 
+    font-weight: 600;
+    padding: 12px;
+    color: #495057; 
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #adb5bd; 
+    color: #495057;
+    background: #ffffff;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+td button {
+    background: #ff4d4d;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: #cc0000;
+}
+
+input, select {
+    margin: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 300px;
+    border: 1px solid #adb5bd; 
+    background: #ffffff;
+    color: #495057; 
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+select {
+    appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="%23495057"><path d="M7 10l5 5 5-5z"/></svg>'); 
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) center;  
+    background-size: 15px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #6c757d;
+}
+
+input:focus, select:focus {
+    border-color: #495057; 
+    box-shadow: 0px 0px 5px rgba(73, 80, 87, 0.4);
+}
+
+button {
+    background: #495057; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #343a40; 
+    box-shadow: 0px 2px 8px rgba(52, 58, 64, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container, .currency-container, .chart-container, table {
+        width: 90%;
+    }
+}
